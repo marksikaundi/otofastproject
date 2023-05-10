@@ -5,6 +5,7 @@ import { SiTorproject } from "react-icons/si";
 import { BsCodeSlash } from "react-icons/bs";
 import { MdStream } from "react-icons/md";
 import Link from "next/link";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
@@ -16,7 +17,8 @@ export default function Header() {
         <MenuItem title="STREAM" address="/stream" Icon={MdStream} />
         
       </div>
-      <div className="">
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-green-600 py-1 px-2 rounded-lg mr-1">fast</span>
